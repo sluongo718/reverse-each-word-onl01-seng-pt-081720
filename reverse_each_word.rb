@@ -1,3 +1,11 @@
+
+
 def reverse_each_word(sentence)
-  sentence.split.collect {|word| word.reverse}.join(" ")
+  array = sentence.split(" ")
+  test_array = []
+  array.collect do |word|
+    test_array << word.reverse
+  end
+  test_array.join(" ")
 end
+
